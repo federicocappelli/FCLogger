@@ -1,5 +1,5 @@
 #FCLogger
-FCLogger is a DDAbstractLogger implementation, usefull for log inside the app all the CocoaLumberjack logs, supports custom colors (Like XCodeColors ) and implements apple watch custom notifications.
+FCLogger is a DDAbstractLogger implementation, usefull for log inside the app all the CocoaLumberjack logs, supports custom colors (Like XCodeColors ) and implements Apple Watch custom notifications (to test and improve, waiting the Apple Watch :D ).
 
 ##Requirements
 CocoaLumberjack
