@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49C0AC0F4278F06C7D97B32D /* libPods-FCLoggerSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 793D7DA98ACCC1DE066441BE /* libPods-FCLoggerSample.a */; };
+		F10E47BF1B0CF5AD00465693 /* FCLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F10E47BE1B0CF5AD00465693 /* FCLogger.m */; };
+		F11B71551AFCCA9200533ECA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F11B71541AFCCA9200533ECA /* main.m */; };
+		F11B71581AFCCA9200533ECA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F11B71571AFCCA9200533ECA /* AppDelegate.m */; };
+		F11B715B1AFCCA9200533ECA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F11B715A1AFCCA9200533ECA /* ViewController.m */; };
+		F11B715E1AFCCA9200533ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11B715C1AFCCA9200533ECA /* Main.storyboard */; };
+		F11B71601AFCCA9200533ECA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11B715F1AFCCA9200533ECA /* Images.xcassets */; };
+		F11B71631AFCCA9200533ECA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F11B71611AFCCA9200533ECA /* LaunchScreen.xib */; };
+		F11B716F1AFCCA9200533ECA /* FCLoggerSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F11B716E1AFCCA9200533ECA /* FCLoggerSampleTests.m */; };
+		F15BC8C41B0DE15600D54C54 /* fcLoggerDebug.png in Resources */ = {isa = PBXBuildFile; fileRef = F15BC8BE1B0DE15600D54C54 /* fcLoggerDebug.png */; };
+		F15BC8C51B0DE15600D54C54 /* fcLoggerDebug.png in Resources */ = {isa = PBXBuildFile; fileRef = F15BC8BE1B0DE15600D54C54 /* fcLoggerDebug.png */; };
+		F15BC8C61B0DE15600D54C54 /* fcLoggerError.png in Resources */ = {isa = PBXBuildFile; fileRef = F15BC8BF1B0DE15600D54C54 /* fcLoggerError.png */; };
+		F15BC8C71B0DE15600D54C54 /* fcLoggerError.png in Resources */ = {isa = PBXBuildFile; fileRef = F15BC8BF1B0DE15600D54C54 /* fcLoggerError.png */; };
+		F15BC8C81B0DE15600D54C54 /* fcLoggerInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = F15BC8C01B0DE15600D54C54 /* fcLoggerInfo.png */; };
+		F15BC8C91B0DE15600D54C54 /* fcLoggerInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = F15BC8C01B0DE15600D54C54 /* fcLoggerInfo.png */; };
+		F15BC8CA1B0DE15600D54C54 /* fcLoggerVerbose.png in Resources */ = {isa = PBXBuildFile; fileRef = F15BC8C11B0DE15600D54C54 /* fcLoggerVerbose.png */; };
+		F15BC8CB1B0DE15600D54C54 /* fcLoggerVerbose.png in Resources */ = {isa = PBXBuildFile; fileRef = F15BC8C11B0DE15600D54C54 /* fcLoggerVerbose.png */; };
+		F15BC8CC1B0DE15600D54C54 /* fcLoggerWarning.png in Resources */ = {isa = PBXBuildFile; fileRef = F15BC8C21B0DE15600D54C54 /* fcLoggerWarning.png */; };
+		F15BC8CD1B0DE15600D54C54 /* fcLoggerWarning.png in Resources */ = {isa = PBXBuildFile; fileRef = F15BC8C21B0DE15600D54C54 /* fcLoggerWarning.png */; };
+		F184988B1B010B44005B34C6 /* FCLoggerNotificationInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F184988A1B010B44005B34C6 /* FCLoggerNotificationInterfaceController.m */; };
+		F184988D1B010B44005B34C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F184988C1B010B44005B34C6 /* Images.xcassets */; };
+		F18498911B010B44005B34C6 /* FCLoggerSample WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = F18498901B010B44005B34C6 /* FCLoggerSample WatchKit App.app */; };
+		F18498991B010B44005B34C6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F18498971B010B44005B34C6 /* Interface.storyboard */; };
+		F184989B1B010B44005B34C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F184989A1B010B44005B34C6 /* Images.xcassets */; };
+		F184989E1B010B44005B34C6 /* FCLoggerSample WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F18498851B010B44005B34C6 /* FCLoggerSample WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F11B71691AFCCA9200533ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F11B71471AFCCA9200533ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F11B714E1AFCCA9200533ECA;
+			remoteInfo = FCLoggerSample;
+		};
+		F18498921B010B44005B34C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F11B71471AFCCA9200533ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F184988F1B010B44005B34C6;
+			remoteInfo = "FCLoggerSample WatchKit App";
+		};
+		F184989C1B010B44005B34C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F11B71471AFCCA9200533ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F18498841B010B44005B34C6;
+			remoteInfo = "FCLoggerSample WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F18498A51B010B44005B34C6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F184989E1B010B44005B34C6 /* FCLoggerSample WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		24CBFBF6C6D52C18C212D507 /* Pods-FCLoggerSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCLoggerSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-FCLoggerSample/Pods-FCLoggerSample.release.xcconfig"; sourceTree = "<group>"; };
+		793D7DA98ACCC1DE066441BE /* libPods-FCLoggerSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FCLoggerSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7B7C2F850F442085C793D81 /* Pods-FCLoggerSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCLoggerSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FCLoggerSample/Pods-FCLoggerSample.debug.xcconfig"; sourceTree = "<group>"; };
+		F10E47BD1B0CF5AD00465693 /* FCLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCLogger.h; sourceTree = "<group>"; };
+		F10E47BE1B0CF5AD00465693 /* FCLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCLogger.m; sourceTree = "<group>"; };
+		F11B714F1AFCCA9200533ECA /* FCLoggerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCLoggerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11B71531AFCCA9200533ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F11B71541AFCCA9200533ECA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F11B71561AFCCA9200533ECA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F11B71571AFCCA9200533ECA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F11B71591AFCCA9200533ECA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F11B715A1AFCCA9200533ECA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F11B715D1AFCCA9200533ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F11B715F1AFCCA9200533ECA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F11B71621AFCCA9200533ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F11B71681AFCCA9200533ECA /* FCLoggerSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FCLoggerSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11B716D1AFCCA9200533ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F11B716E1AFCCA9200533ECA /* FCLoggerSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCLoggerSampleTests.m; sourceTree = "<group>"; };
+		F15BC8BE1B0DE15600D54C54 /* fcLoggerDebug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fcLoggerDebug.png; sourceTree = "<group>"; };
+		F15BC8BF1B0DE15600D54C54 /* fcLoggerError.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fcLoggerError.png; sourceTree = "<group>"; };
+		F15BC8C01B0DE15600D54C54 /* fcLoggerInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fcLoggerInfo.png; sourceTree = "<group>"; };
+		F15BC8C11B0DE15600D54C54 /* fcLoggerVerbose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fcLoggerVerbose.png; sourceTree = "<group>"; };
+		F15BC8C21B0DE15600D54C54 /* fcLoggerWarning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fcLoggerWarning.png; sourceTree = "<group>"; };
+		F18498851B010B44005B34C6 /* FCLoggerSample WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FCLoggerSample WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F18498881B010B44005B34C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F18498891B010B44005B34C6 /* FCLoggerNotificationInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCLoggerNotificationInterfaceController.h; sourceTree = "<group>"; };
+		F184988A1B010B44005B34C6 /* FCLoggerNotificationInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCLoggerNotificationInterfaceController.m; sourceTree = "<group>"; };
+		F184988C1B010B44005B34C6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F18498901B010B44005B34C6 /* FCLoggerSample WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FCLoggerSample WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F18498961B010B44005B34C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F18498981B010B44005B34C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F184989A1B010B44005B34C6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F11B714C1AFCCA9200533ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C0AC0F4278F06C7D97B32D /* libPods-FCLoggerSample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11B71651AFCCA9200533ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F18498821B010B44005B34C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08BBD0AD0F45BEFE5351CCBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				793D7DA98ACCC1DE066441BE /* libPods-FCLoggerSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1DC8001C8B6A4FE52C114F44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7B7C2F850F442085C793D81 /* Pods-FCLoggerSample.debug.xcconfig */,
+				24CBFBF6C6D52C18C212D507 /* Pods-FCLoggerSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F10E47BC1B0CF5AD00465693 /* FCLogger */ = {
+			isa = PBXGroup;
+			children = (
+				F10E47BD1B0CF5AD00465693 /* FCLogger.h */,
+				F10E47BE1B0CF5AD00465693 /* FCLogger.m */,
+			);
+			path = FCLogger;
+			sourceTree = "<group>";
+		};
+		F11B71461AFCCA9200533ECA = {
+			isa = PBXGroup;
+			children = (
+				F11B71511AFCCA9200533ECA /* FCLoggerSample */,
+				F11B716B1AFCCA9200533ECA /* FCLoggerSampleTests */,
+				F18498861B010B44005B34C6 /* FCLoggerSample WatchKit Extension */,
+				F18498941B010B44005B34C6 /* FCLoggerSample WatchKit App */,
+				F11B71501AFCCA9200533ECA /* Products */,
+				1DC8001C8B6A4FE52C114F44 /* Pods */,
+				08BBD0AD0F45BEFE5351CCBC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F11B71501AFCCA9200533ECA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F11B714F1AFCCA9200533ECA /* FCLoggerSample.app */,
+				F11B71681AFCCA9200533ECA /* FCLoggerSampleTests.xctest */,
+				F18498851B010B44005B34C6 /* FCLoggerSample WatchKit Extension.appex */,
+				F18498901B010B44005B34C6 /* FCLoggerSample WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F11B71511AFCCA9200533ECA /* FCLoggerSample */ = {
+			isa = PBXGroup;
+			children = (
+				F11B71561AFCCA9200533ECA /* AppDelegate.h */,
+				F11B71571AFCCA9200533ECA /* AppDelegate.m */,
+				F11B71591AFCCA9200533ECA /* ViewController.h */,
+				F11B715A1AFCCA9200533ECA /* ViewController.m */,
+				F11B715C1AFCCA9200533ECA /* Main.storyboard */,
+				F11B715F1AFCCA9200533ECA /* Images.xcassets */,
+				F11B71611AFCCA9200533ECA /* LaunchScreen.xib */,
+				F10E47BC1B0CF5AD00465693 /* FCLogger */,
+				F11B71521AFCCA9200533ECA /* Supporting Files */,
+			);
+			path = FCLoggerSample;
+			sourceTree = "<group>";
+		};
+		F11B71521AFCCA9200533ECA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F11B71531AFCCA9200533ECA /* Info.plist */,
+				F11B71541AFCCA9200533ECA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F11B716B1AFCCA9200533ECA /* FCLoggerSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				F11B716E1AFCCA9200533ECA /* FCLoggerSampleTests.m */,
+				F11B716C1AFCCA9200533ECA /* Supporting Files */,
+			);
+			path = FCLoggerSampleTests;
+			sourceTree = "<group>";
+		};
+		F11B716C1AFCCA9200533ECA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F11B716D1AFCCA9200533ECA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F15BC8BD1B0DE15600D54C54 /* FCLoggerImages */ = {
+			isa = PBXGroup;
+			children = (
+				F15BC8BE1B0DE15600D54C54 /* fcLoggerDebug.png */,
+				F15BC8BF1B0DE15600D54C54 /* fcLoggerError.png */,
+				F15BC8C01B0DE15600D54C54 /* fcLoggerInfo.png */,
+				F15BC8C11B0DE15600D54C54 /* fcLoggerVerbose.png */,
+				F15BC8C21B0DE15600D54C54 /* fcLoggerWarning.png */,
+			);
+			path = FCLoggerImages;
+			sourceTree = "<group>";
+		};
+		F18498861B010B44005B34C6 /* FCLoggerSample WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F18498891B010B44005B34C6 /* FCLoggerNotificationInterfaceController.h */,
+				F184988A1B010B44005B34C6 /* FCLoggerNotificationInterfaceController.m */,
+				F184988C1B010B44005B34C6 /* Images.xcassets */,
+				F18498871B010B44005B34C6 /* Supporting Files */,
+			);
+			path = "FCLoggerSample WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F18498871B010B44005B34C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F18498881B010B44005B34C6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F18498941B010B44005B34C6 /* FCLoggerSample WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F18498971B010B44005B34C6 /* Interface.storyboard */,
+				F184989A1B010B44005B34C6 /* Images.xcassets */,
+				F18498951B010B44005B34C6 /* Supporting Files */,
+			);
+			path = "FCLoggerSample WatchKit App";
+			sourceTree = "<group>";
+		};
+		F18498951B010B44005B34C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F15BC8BD1B0DE15600D54C54 /* FCLoggerImages */,
+				F18498961B010B44005B34C6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F11B714E1AFCCA9200533ECA /* FCLoggerSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F11B71721AFCCA9200533ECA /* Build configuration list for PBXNativeTarget "FCLoggerSample" */;
+			buildPhases = (
+				D62B4E833797A5CD8C2B8009 /* Check Pods Manifest.lock */,
+				F11B714B1AFCCA9200533ECA /* Sources */,
+				F11B714C1AFCCA9200533ECA /* Frameworks */,
+				F11B714D1AFCCA9200533ECA /* Resources */,
+				5DE4298F41FFFFD2F9206619 /* Copy Pods Resources */,
+				F18498A51B010B44005B34C6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F184989D1B010B44005B34C6 /* PBXTargetDependency */,
+			);
+			name = FCLoggerSample;
+			productName = FCLoggerSample;
+			productReference = F11B714F1AFCCA9200533ECA /* FCLoggerSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F11B71671AFCCA9200533ECA /* FCLoggerSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F11B71751AFCCA9200533ECA /* Build configuration list for PBXNativeTarget "FCLoggerSampleTests" */;
+			buildPhases = (
+				F11B71641AFCCA9200533ECA /* Sources */,
+				F11B71651AFCCA9200533ECA /* Frameworks */,
+				F11B71661AFCCA9200533ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F11B716A1AFCCA9200533ECA /* PBXTargetDependency */,
+			);
+			name = FCLoggerSampleTests;
+			productName = FCLoggerSampleTests;
+			productReference = F11B71681AFCCA9200533ECA /* FCLoggerSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F18498841B010B44005B34C6 /* FCLoggerSample WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F18498A21B010B44005B34C6 /* Build configuration list for PBXNativeTarget "FCLoggerSample WatchKit Extension" */;
+			buildPhases = (
+				F18498811B010B44005B34C6 /* Sources */,
+				F18498821B010B44005B34C6 /* Frameworks */,
+				F18498831B010B44005B34C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F18498931B010B44005B34C6 /* PBXTargetDependency */,
+			);
+			name = "FCLoggerSample WatchKit Extension";
+			productName = "FCLoggerSample WatchKit Extension";
+			productReference = F18498851B010B44005B34C6 /* FCLoggerSample WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		F184988F1B010B44005B34C6 /* FCLoggerSample WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F184989F1B010B44005B34C6 /* Build configuration list for PBXNativeTarget "FCLoggerSample WatchKit App" */;
+			buildPhases = (
+				F184988E1B010B44005B34C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FCLoggerSample WatchKit App";
+			productName = "FCLoggerSample WatchKit App";
+			productReference = F18498901B010B44005B34C6 /* FCLoggerSample WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F11B71471AFCCA9200533ECA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Federico Cappelli";
+				TargetAttributes = {
+					F11B714E1AFCCA9200533ECA = {
+						CreatedOnToolsVersion = 6.3.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+					F11B71671AFCCA9200533ECA = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = F11B714E1AFCCA9200533ECA;
+					};
+					F18498841B010B44005B34C6 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					F184988F1B010B44005B34C6 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F11B714A1AFCCA9200533ECA /* Build configuration list for PBXProject "FCLoggerSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F11B71461AFCCA9200533ECA;
+			productRefGroup = F11B71501AFCCA9200533ECA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F11B714E1AFCCA9200533ECA /* FCLoggerSample */,
+				F11B71671AFCCA9200533ECA /* FCLoggerSampleTests */,
+				F18498841B010B44005B34C6 /* FCLoggerSample WatchKit Extension */,
+				F184988F1B010B44005B34C6 /* FCLoggerSample WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F11B714D1AFCCA9200533ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11B715E1AFCCA9200533ECA /* Main.storyboard in Resources */,
+				F11B71631AFCCA9200533ECA /* LaunchScreen.xib in Resources */,
+				F11B71601AFCCA9200533ECA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11B71661AFCCA9200533ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F18498831B010B44005B34C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F184988D1B010B44005B34C6 /* Images.xcassets in Resources */,
+				F18498911B010B44005B34C6 /* FCLoggerSample WatchKit App.app in Resources */,
+				F15BC8C41B0DE15600D54C54 /* fcLoggerDebug.png in Resources */,
+				F15BC8CA1B0DE15600D54C54 /* fcLoggerVerbose.png in Resources */,
+				F15BC8C61B0DE15600D54C54 /* fcLoggerError.png in Resources */,
+				F15BC8CC1B0DE15600D54C54 /* fcLoggerWarning.png in Resources */,
+				F15BC8C81B0DE15600D54C54 /* fcLoggerInfo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F184988E1B010B44005B34C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F18498991B010B44005B34C6 /* Interface.storyboard in Resources */,
+				F184989B1B010B44005B34C6 /* Images.xcassets in Resources */,
+				F15BC8C51B0DE15600D54C54 /* fcLoggerDebug.png in Resources */,
+				F15BC8CB1B0DE15600D54C54 /* fcLoggerVerbose.png in Resources */,
+				F15BC8C71B0DE15600D54C54 /* fcLoggerError.png in Resources */,
+				F15BC8CD1B0DE15600D54C54 /* fcLoggerWarning.png in Resources */,
+				F15BC8C91B0DE15600D54C54 /* fcLoggerInfo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DE4298F41FFFFD2F9206619 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FCLoggerSample/Pods-FCLoggerSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D62B4E833797A5CD8C2B8009 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F11B714B1AFCCA9200533ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11B715B1AFCCA9200533ECA /* ViewController.m in Sources */,
+				F11B71581AFCCA9200533ECA /* AppDelegate.m in Sources */,
+				F10E47BF1B0CF5AD00465693 /* FCLogger.m in Sources */,
+				F11B71551AFCCA9200533ECA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11B71641AFCCA9200533ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11B716F1AFCCA9200533ECA /* FCLoggerSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F18498811B010B44005B34C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F184988B1B010B44005B34C6 /* FCLoggerNotificationInterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F11B716A1AFCCA9200533ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F11B714E1AFCCA9200533ECA /* FCLoggerSample */;
+			targetProxy = F11B71691AFCCA9200533ECA /* PBXContainerItemProxy */;
+		};
+		F18498931B010B44005B34C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F184988F1B010B44005B34C6 /* FCLoggerSample WatchKit App */;
+			targetProxy = F18498921B010B44005B34C6 /* PBXContainerItemProxy */;
+		};
+		F184989D1B010B44005B34C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F18498841B010B44005B34C6 /* FCLoggerSample WatchKit Extension */;
+			targetProxy = F184989C1B010B44005B34C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F11B715C1AFCCA9200533ECA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F11B715D1AFCCA9200533ECA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F11B71611AFCCA9200533ECA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F11B71621AFCCA9200533ECA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		F18498971B010B44005B34C6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F18498981B010B44005B34C6 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F11B71701AFCCA9200533ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F11B71711AFCCA9200533ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F11B71731AFCCA9200533ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7B7C2F850F442085C793D81 /* Pods-FCLoggerSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FCLoggerSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F11B71741AFCCA9200533ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24CBFBF6C6D52C18C212D507 /* Pods-FCLoggerSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FCLoggerSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F11B71761AFCCA9200533ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FCLoggerSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FCLoggerSample.app/FCLoggerSample";
+			};
+			name = Debug;
+		};
+		F11B71771AFCCA9200533ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FCLoggerSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FCLoggerSample.app/FCLoggerSample";
+			};
+			name = Release;
+		};
+		F18498A01B010B44005B34C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = FCLoggerSample_WatchKit_Extension;
+				INFOPLIST_FILE = "FCLoggerSample WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		F18498A11B010B44005B34C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = FCLoggerSample_WatchKit_Extension;
+				INFOPLIST_FILE = "FCLoggerSample WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		F18498A31B010B44005B34C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FCLoggerSample WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F18498A41B010B44005B34C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "FCLoggerSample WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F11B714A1AFCCA9200533ECA /* Build configuration list for PBXProject "FCLoggerSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11B71701AFCCA9200533ECA /* Debug */,
+				F11B71711AFCCA9200533ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F11B71721AFCCA9200533ECA /* Build configuration list for PBXNativeTarget "FCLoggerSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11B71731AFCCA9200533ECA /* Debug */,
+				F11B71741AFCCA9200533ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F11B71751AFCCA9200533ECA /* Build configuration list for PBXNativeTarget "FCLoggerSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11B71761AFCCA9200533ECA /* Debug */,
+				F11B71771AFCCA9200533ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F184989F1B010B44005B34C6 /* Build configuration list for PBXNativeTarget "FCLoggerSample WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F18498A01B010B44005B34C6 /* Debug */,
+				F18498A11B010B44005B34C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F18498A21B010B44005B34C6 /* Build configuration list for PBXNativeTarget "FCLoggerSample WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F18498A31B010B44005B34C6 /* Debug */,
+				F18498A41B010B44005B34C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F11B71471AFCCA9200533ECA /* Project object */;
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="JhD-HP-FVO">
+            <objects>
+                <notificationController id="PvR-fb-Qfu">
+                    <items>
+                        <label width="1" alignment="left" text="New Log" textAlignment="center" id="zC7-QI-a0R">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                        <label alignment="left" text="Alert Label" textAlignment="center" id="UaI-Ob-n1R">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="FCLoggerNotification" id="h7X-gb-cja"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="UaI-Ob-n1R" id="DBD-ck-2Fe"/>
+                        <segue destination="7Yd-dH-2ZH" kind="relationship" relationship="dynamicNotificationInterface" id="MDd-VI-viR"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="563" y="229"/>
+        </scene>
+        <!--Logger Notification Interface Controller-->
+        <scene sceneID="SKJ-By-hdg">
+            <objects>
+                <controller id="7Yd-dH-2ZH" customClass="FCLoggerNotificationInterfaceController">
+                    <items>
+                        <table alignment="left" id="7ex-37-jLs">
+                            <items>
+                                <tableRow id="WVL-Ug-wZP">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="Zg0-Sw-uB0">
+                                        <items>
+                                            <imageView width="50" height="50" alignment="center" image="fcLoggerError.png" contentMode="scaleAspectFit" id="Wcz-m8-HcP">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </imageView>
+                                            <dateLabel width="1" alignment="left" textAlignment="center" format="d/M h:mm:ss a" id="RDx-QA-x8Q">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                                <date key="previewedDate" timeIntervalSinceReferenceDate="440359740">
+                                                    <!--2014-12-15 18:09:00 +0000-->
+                                                </date>
+                                            </dateLabel>
+                                            <label width="1" alignment="left" text="Log content bla bla bla bla" numberOfLines="0" id="n5M-U6-rBL"/>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="781" y="228.5"/>
+        </scene>
+    </scenes>
+</document>
