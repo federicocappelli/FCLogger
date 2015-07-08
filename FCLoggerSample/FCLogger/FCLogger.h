@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import <CocoaLumberjack/CocoaLumberjack.h>
 
 /*
@@ -18,7 +19,7 @@
  */
 @interface FCLogger : DDAbstractLogger <DDLogger>
 
-@property (nonatomic, weak) UITextView *textView;
+@property (nonatomic, strong) UITextView *textView;
 
 /**
  *  Automatically scroll to the bottom when a new log is added.

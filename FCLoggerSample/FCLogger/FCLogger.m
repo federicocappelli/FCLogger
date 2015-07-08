@@ -147,8 +147,6 @@ static NSString * const notificationName = @"FCLoggerNotification";
             [entireLog appendAttributedString:attrStr];
         }
         
-        [self.logMsgCache removeAllObjects];
-        
         self.textView.attributedText = entireLog;
         
         if (self.autoScrollsToBottom)
