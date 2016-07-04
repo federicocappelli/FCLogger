@@ -1,0 +1,26 @@
+PODS:
+  - CocoaLumberjack (2.3.0):
+    - CocoaLumberjack/Default (= 2.3.0)
+    - CocoaLumberjack/Extensions (= 2.3.0)
+  - CocoaLumberjack/Core (2.3.0)
+  - CocoaLumberjack/Default (2.3.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.3.0):
+    - CocoaLumberjack/Default
+  - FCLogger (0.1.0):
+    - CocoaLumberjack
+
+DEPENDENCIES:
+  - FCLogger (from `../`)
+
+EXTERNAL SOURCES:
+  FCLogger:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
+  FCLogger: 5e9bfb5b06d33d6b011b648925a5de5a7ed42e23
+
+PODFILE CHECKSUM: bf7b5e2daeb606a471fb5ffd4db27544f4145265
+
+COCOAPODS: 1.0.1

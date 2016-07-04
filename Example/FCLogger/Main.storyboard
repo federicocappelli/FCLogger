@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TnO-ea-A0t">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--FCLogger-->
+        <scene sceneID="ZKE-Ae-Gtl">
+            <objects>
+                <navigationController title="FCLogger" id="TnO-ea-A0t" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L9P-jR-IQL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jBX-Jq-P7z" kind="relationship" relationship="rootViewController" id="9gz-SK-i56"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qvK-Yk-JGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="-36"/>
+        </scene>
+        <!--FCLogger-->
+        <scene sceneID="pBP-dh-EGa">
+            <objects>
+                <viewController title="FCLogger" id="jBX-Jq-P7z" customClass="FCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YHK-E6-Se1"/>
+                        <viewControllerLayoutGuide type="bottom" id="xrv-Wb-cPp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bgI-mr-2tU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFG-py-XuW">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Log text view">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EFG-py-XuW" firstAttribute="leading" secondItem="bgI-mr-2tU" secondAttribute="leading" id="7gl-z6-9H8"/>
+                            <constraint firstItem="EFG-py-XuW" firstAttribute="top" secondItem="bgI-mr-2tU" secondAttribute="top" id="MD4-Xc-7Ua"/>
+                            <constraint firstAttribute="trailing" secondItem="EFG-py-XuW" secondAttribute="trailing" id="kXA-LO-007"/>
+                            <constraint firstItem="EFG-py-XuW" firstAttribute="bottom" secondItem="xrv-Wb-cPp" secondAttribute="top" id="oZU-Nm-dLW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jnf-gC-t18">
+                        <barButtonItem key="rightBarButtonItem" title="Add Log" id="5Bw-1u-UIh">
+                            <connections>
+                                <action selector="addLogHandler:" destination="jBX-Jq-P7z" id="zLI-4k-PHg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textView" destination="EFG-py-XuW" id="veg-vS-Hpe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tR-7o-ndu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="-33"/>
+        </scene>
+    </scenes>
+</document>

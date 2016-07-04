@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FCLogger_Example' do
+  pod 'FCLogger', :path => '../'
+  
+  target 'FCLogger_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

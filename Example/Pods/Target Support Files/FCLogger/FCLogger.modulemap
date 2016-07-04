@@ -1,0 +1,6 @@
+framework module FCLogger {
+  umbrella header "FCLogger-umbrella.h"
+
+  export *
+  module * { export * }
+}
