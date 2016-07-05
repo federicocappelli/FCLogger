@@ -25,8 +25,10 @@ static NSString * const notificationName = @"FCLoggerNotification";
 
 #pragma mark - Init
 
-- (id)init {
-    if (self = [super init]) {
+- (id)init
+{
+    if (self = [super init])
+    {
         _autoScrollsToBottom = YES;
         _colorProfilesDict = [NSMutableDictionary new];
         [self loadDefaultColors];
@@ -49,7 +51,7 @@ static NSString * const notificationName = @"FCLoggerNotification";
 {
     NSAssert(self.textView != nil, @"self.textView is nil");
     
-    if(!string)
+    if(string == nil || string.length == 0)
     {
         return;
     }
@@ -59,13 +61,11 @@ static NSString * const notificationName = @"FCLoggerNotification";
         NSDictionary *attrs = @{ NSForegroundColorAttributeName : color };
         NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:string attributes:attrs];
         
-        NSMutableAttributedString * newText = [[NSMutableAttributedString alloc] initWithAttributedString:self.textView.attributedText];
-        [newText appendAttributedString:attrStr];
-        [self.textView setAttributedText:newText];
+        NSMutableAttributedString * resultAttributedString = [[NSMutableAttributedString alloc] initWithAttributedString:self.textView.attributedText];
+        [resultAttributedString appendAttributedString:attrStr];
+        [self.textView setAttributedText:resultAttributedString];
         
-        if (self.autoScrollsToBottom) {
-            [self.textView scrollRangeToVisible:NSMakeRange(newText.length, 0)];
-        }
+        [self scrollTextViewToBottom];
     });
 }
 
@@ -101,8 +101,9 @@ static NSString * const notificationName = @"FCLoggerNotification";
         }
         else
         {
-            if (!self.logMsgCache) {
-                self.logMsgCache = [NSMutableArray array];
+            if (self.logMsgCache == nil)
+            {
+                self.logMsgCache = [NSMutableArray new];
             }
             
             NSDictionary *attrs = @{ NSForegroundColorAttributeName : logColor };
@@ -139,8 +140,14 @@ static NSString * const notificationName = @"FCLoggerNotification";
 {
     if (_textView != textView)
     {
+        NSMutableAttributedString *entireLog = [[NSMutableAttributedString alloc] initWithAttributedString: textView.attributedText];
+        if (_textView != nil)
+        {
+            //transfer logs
+            [entireLog appendAttributedString: _textView.attributedText];
+        }
+        
         _textView = textView;
-        NSMutableAttributedString *entireLog = [[NSMutableAttributedString alloc] init];
         
         for (NSAttributedString * attrStr in self.logMsgCache)
         {
@@ -150,10 +157,9 @@ static NSString * const notificationName = @"FCLoggerNotification";
         
         self.textView.attributedText = entireLog;
         
-        if (self.autoScrollsToBottom)
-        {
-            [self.textView scrollRangeToVisible:NSMakeRange(entireLog.length, 0)];
-        }
+        self.logMsgCache = nil;
+        
+        [self scrollTextViewToBottom];
     }
 }
 
@@ -166,5 +172,17 @@ static NSString * const notificationName = @"FCLoggerNotification";
 //{
 //    _notificationMask = mask;
 //}
+
+- (void)scrollTextViewToBottom
+{
+    if (self.autoScrollsToBottom)
+    {
+        //[self.textView scrollRangeToVisible:NSMakeRange(entireLog.length, 0)];
+        dispatch_async(dispatch_get_main_queue(), ^(void) {
+            NSRange range = NSMakeRange(self.textView.attributedText.length - 1, 1);
+            [self.textView scrollRangeToVisible:range];
+        });
+    }
+}
 
 @end

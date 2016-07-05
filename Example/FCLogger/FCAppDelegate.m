@@ -12,7 +12,35 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    // create the FC logger
+    self.fcLogger = [[FCLogger alloc] init];
+    
+    //enable auto scroll
+    self.fcLogger.autoScrollsToBottom = YES;
+    
+    //enable colors support
+    self.fcLogger.colorsEnabled = YES;
+    
+    //enable Apple Watch support
+    //    self.fcLogger.watchSupportEnabled = YES;
+    
+    //enable notifications only for errors and warnings
+    //    [self.fcLogger enableWatchNotificationsForFlags: DDLogFlagWarning | DDLogFlagError];
+    
+    //add logger to CocoaLumberjack
+    [DDLog addLogger:self.fcLogger];
+    
+    //set custom color for specific log flag
+    [self.fcLogger setLogColor:[UIColor blueColor] forFlag:DDLogFlagDebug];
+    
+    for (int i = 0; i<20; i++) {
+        [self addRandomLog];
+    }
+    
+    DDLogDebug(@"Test debug log");
+    DDLogError(@"Test error log");
+    
     return YES;
 }
 
@@ -41,6 +69,39 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void)addRandomLog
+{
+    int randomFlag = arc4random_uniform(4);
+    switch (randomFlag)
+    {
+        case 0:
+        {
+            DDLogError(@"Error log test string");
+        }
+            break;
+        case 1:
+        {
+            DDLogWarn(@"Warning log test string");
+        }
+            break;
+        case 2:
+        {
+            DDLogInfo(@"Info log test string");
+        }
+            break;
+        case 3:
+        {
+            DDLogDebug(@"Debug log test string");
+        }
+            break;
+        case 4:
+        {
+            DDLogVerbose(@"Verbose log test string");
+        }
+            break;
+    }
 }
 
 @end

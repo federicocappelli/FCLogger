@@ -14,12 +14,44 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="jBX-Jq-P7z" kind="relationship" relationship="rootViewController" id="9gz-SK-i56"/>
+                        <segue destination="8Sj-oP-fNi" kind="relationship" relationship="rootViewController" id="RhY-IN-d0l"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qvK-Yk-JGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="36" y="-36"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YKd-E4-pBc">
+            <objects>
+                <viewController id="8Sj-oP-fNi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z3r-F5-52M"/>
+                        <viewControllerLayoutGuide type="bottom" id="mFc-Rs-QtS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M2s-iL-CrE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dd7-UV-LmT">
+                                <rect key="frame" x="253" y="285" width="95" height="30"/>
+                                <state key="normal" title="Open console"/>
+                                <connections>
+                                    <segue destination="jBX-Jq-P7z" kind="show" id="gqF-IK-1s2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dd7-UV-LmT" firstAttribute="centerX" secondItem="M2s-iL-CrE" secondAttribute="centerX" id="fxg-fI-QL2"/>
+                            <constraint firstItem="dd7-UV-LmT" firstAttribute="centerY" secondItem="M2s-iL-CrE" secondAttribute="centerY" id="rZg-qI-r1h"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JkG-pV-Zg6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OdY-zF-9wf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="-36"/>
         </scene>
         <!--FCLogger-->
         <scene sceneID="pBP-dh-EGa">
@@ -33,7 +65,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFG-py-XuW">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFG-py-XuW">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
@@ -68,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5tR-7o-ndu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="770" y="-33"/>
+            <point key="canvasLocation" x="1391" y="-36"/>
         </scene>
     </scenes>
 </document>

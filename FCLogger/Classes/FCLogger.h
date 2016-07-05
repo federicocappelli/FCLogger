@@ -39,7 +39,7 @@
  */
 - (void)setLogColor:(DDColor *)txtColor forFlag:(DDLogFlag)flag;
 
-#pragma mark - Apple watch
+//#pragma mark - Apple watch
 
 /**
  *  Enable local notifications, each notification uses apple watch long-look notification provided (if implemented) otherwise a static notification.
